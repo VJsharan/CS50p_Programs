@@ -1,6 +1,13 @@
-'''#problem : to enter the food, and one CTRL + D is pressed, it has to display the total amount
+'''
+# Problem : To enter the foods, and once CTRL + D is pressed, it has to display the total amount
 # Solution : 
-
+    • val is initialized to 0.00 for float purposes and the dict is initialized too.
+    • Then the inputs are obtained and converted into TitleCase since it’s like that in the dict.
+    • Then, if the input is either empty ' ' or not in given, it’s redone.
+    • Otherwise, if the input is there in the given dict, the value of that key is taken and incremented to the bill amount.
+    • This process is done repeatedly until CTRL + D is pressed.
+    • If a KeyError is caught, it’s redone.
+    • Once CTRL + D is pressed, the program is exited using sys.exit().
 '''
 import sys
 val=0.00
